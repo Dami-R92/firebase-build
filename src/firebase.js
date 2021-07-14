@@ -8,7 +8,7 @@ var firebaseConfig = {
     storageBucket: "fir-coderhouse.appspot.com",
     messagingSenderId: "367348446063",
     appId: "1:367348446063:web:77b20312a7bc7a1d84ee9a"
-  };
+};
   // Initialize Firebase
 const fb = firebase.initializeApp(firebaseConfig);
 

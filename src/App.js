@@ -7,8 +7,14 @@ import { db } from './firebase'
 const App = () => {
   const [products, setProducts] = useState([]);
 
+  const getProducts = ()=> {
+    db.collection('products').onSnapshot((querySnapshot)=> {
+      console.log(querySnapshot);
+    })
+  }
+
   useEffect(()=> {
-    console.log('Getting Data');
+    getProducts();
 
   },[])
 
